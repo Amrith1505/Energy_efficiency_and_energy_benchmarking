@@ -1,5 +1,7 @@
 MLOps
+
 What is MLOps?
+
 MLOps is a set of practices to unify ML systems development(dev) and ML systems deployment(ops) to be able to use high accuracy models during production. It is a continuous execution of certain steps(aka pipeline) in a systematic manner which simplify the management process, and automates the process of deploying  ML and DL models for large scale deployments.	
 
 Source: https://blogs.nvidia.com/wp-content/uploads/2020/09/MLOps-Neal-Analytics.png
