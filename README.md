@@ -8,14 +8,19 @@ Source: https://blogs.nvidia.com/wp-content/uploads/2020/09/MLOps-Neal-Analytics
 
 
 Why do we need MLOps?
+
 Delay in deployment:
 Applying machine learning models into production has proven even more difficult than finding resourceful data and figuring out how to train the models. Even the most talented engineers find it difficult to deploy their sophisticated softwares.
+
 Weak communication:
 To bring a product to production it requires the work of three main teams of people namely Data engineers, data scientists and software engineers. These three teams seem to sit worlds apart from operations teams. Even if  we are able to sneak out of development stages, there is rarely sufficient, streamlined support to bring our work to full production.
+
 Lack of Foresight:
 The data which are experienced in production might be way different from the data used to train models. The model should be future ready( continuously trained and monitored)
+
 High expectations:
 There is so much hype around data science  and machine learning due to which expectations are generally very high. They require complex technologies and a lot of resources along with an enormous amount of time and effort to implement even a single machine learning model in the real world. 
+
 Collecting data:
 This is the most important step which is not released until it's too late. About 60% of the work is done if we collect the right data. Knowledge of data engineering will prove helpful in collecting the right data.
 
@@ -143,10 +148,10 @@ MLOps Architecture in GCP:
 
 
 
-
-
 MLOPs: An intuitive case study on ENERGY EFFICIENCY AND ENERGY BENCHMARKING.
+
 Problem statement:
+
 Energy consumed in buildings is a significant fraction of that consumed in all end-use sectors.  Although percentages vary from country to country, buildings are responsible for about 30 to 45% of the global energy demand. For
 instance, buildings consume approximately 41% of total primary energy use by sector
 in the US (United States Department of Energy [USDOE] 2012) and particularly, 18%(17.4 out of 97.4 quadrillion Btu) from commercial buildings. Energy consumption from the HVAC(Heating, Ventilation, and Air Conditioning) system and lighting requirements in a typical building range between 45 to 55% and 20 to 35% from its operational energy consumption respectively.
@@ -155,13 +160,17 @@ Despite having  simple energy saving techniques, the world has taken a move towa
 Depending on the count of people in the room, if the energy used is more than required, reducing the number of appliances in use is a way to reduce energy consumption( eg. For 10 people in a room 2AC’s and 4 lights are required but if there are only 4 people 1Ac and 2 lights is more than enough) .Implementation of this not only helps in saving energy but also significantly reduces the cost spent on energy consumption.
 
 Data engineering:
+
 Data ingestion takes place from either of the two data sources, namely YouTube URL or camera streaming URL. According to the selection, the URL is verified for its correctness.
 If the given URL is valid, then it starts streaming the video using OpenCV. 
 Then we need to upload a CSV file which contains the details of the customers whose name can be identified by the model.
+
 Data storage:
 Simultaneously, the captured frames are encoded and stored in the MySQL database. 
 After processing(which is explained below), the details of the people matched with the csv details and detected face are stored in the database. 
+
 Model engineering:
 We used DeepFace open-source library to load required models. Now the captured frames are processed to identify the name, race and gender count in each frame.
+
 Analysis:
 Now it checks whether any frame doesn’t contain people, if so an alert mail or SMS would be sent to the corresponding Mail ID or phone number.
